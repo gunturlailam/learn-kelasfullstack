@@ -13,4 +13,4 @@ Memilih bahasa pertama seringkali membingungkan karena banyaknya pilihan. Cara t
 Jika benar-benar pemula dan ingin cepat melihat hasil, disarankan mulai dari **JavaScript** atau **Python**.
 
 ---
-*Catatan Belajar - Materi 03 - Memilih Bahasa Pemrograman*
+*Catatan Belajar - Materi 04 - Memilih Bahasa Pemrograman*
