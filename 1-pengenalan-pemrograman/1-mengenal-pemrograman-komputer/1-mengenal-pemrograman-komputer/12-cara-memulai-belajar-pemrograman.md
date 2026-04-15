@@ -17,4 +17,4 @@ Memulai belajar pemrograman bisa membingungkan, namun dapat dirangkum dalam lang
 > **Ingat:** Fokus pada proses belajar yang tekun dan konsisten adalah kunci utama.
 
 ---
-*Catatan Belajar - Materi 11 - Panduan Langkah Memulai Belajar Pemrograman*
+*Catatan Belajar - Materi 12 - Panduan Langkah Memulai Belajar Pemrograman*
