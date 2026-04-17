@@ -15,4 +15,4 @@ Seseorang iOS dev wajib memahami arsitektur dan pola komunikasi data seperti:
 > **Catatan:** Pengembangan iOS secara native biasanya membutuhkan perangkat keras Mac (MacBook/iMac) untuk menjalankan Xcode.
 
 ---
-*Catatan Belajar - Materi 5 - iOS Programming*
+*Catatan Belajar - Materi 6 - iOS Programming*
