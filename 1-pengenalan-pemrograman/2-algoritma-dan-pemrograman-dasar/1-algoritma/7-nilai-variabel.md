@@ -15,4 +15,4 @@ Nilai dapat berasal dari beberapa sumber:
 * **Hasil Ekspresi/Fungsi:** Nilai yang didapat dari hasil perhitungan atau kembalian (*return*) suatu fungsi (Contoh: Jika var1 = 5, maka jumlah = var1 * 5 menghasilkan nilai 25).
 
 ---
-*Catatan Belajar - Materi 6 - Nilai Variabel    *
+*Catatan Belajar - Materi 7 - Nilai Variabel*
