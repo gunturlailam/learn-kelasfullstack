@@ -20,4 +20,4 @@ Text Editor (seperti VS Code) disarankan ketika:
 3. **Sublime Text:** Alternatif paling ringan untuk sekadar mengedit file konfigurasi cepat.
 
 ---
-*Catatan Belajar - Materi 1 - Memilih IDE dan Editor*
+*Catatan Belajar - Materi 2 - Memilih IDE dan Editor*
