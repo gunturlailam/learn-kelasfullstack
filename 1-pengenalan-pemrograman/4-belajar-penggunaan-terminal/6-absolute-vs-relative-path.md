@@ -21,4 +21,4 @@ Menunjukkan lokasi file/folder berdasarkan posisi (direktori) kita saat ini.
 * **Relative Path:** Sangat disarankan dalam koding (seperti memanggil gambar di HTML atau CSS) agar proyek tetap fleksibel.
 
 ---
-*Catatan Belajar - Materi 6 - Absolute vs Relative Path*
+*Catatan Belajar - Materi 6 - Absolute vs Relative*
