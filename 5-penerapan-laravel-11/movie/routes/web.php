@@ -6,16 +6,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/movie', function () {
-    $movies = [];
+$movies = [];
 
-    for ($i = 0; $i < 10; $i++) {
-        $movies[] = [
-            'title' => 'Movie ' . $i,
-            'year' => '2022',
-            'genre' => 'Action',
-        ];
-    }
+for ($i = 0; $i < 10; $i++) {
+    $movies[] = [
+        'title' => 'Movie ' . $i,
+        'year' => '2022',
+        'genre' => 'Action',
+    ];
+}
+
+Route::get('/movie', function () use ($movies) {
+
 
     echo "<h1>Movies</h1>";
     echo "<ul>";
@@ -26,5 +28,9 @@ Route::get('/movie', function () {
 });
 
 Route::post('/movie', function () {
-    return request()->all();
+    $movies[] = [
+        'title' => request('title'),
+        'year' => request('year'),
+        'genre' => request('genre'),
+    ];
 });
