@@ -18,8 +18,8 @@ for ($i = 0; $i < 10; $i++) {
 }
 
 Route::get('/movie/{id}', function ($id) use ($movies) {
-    return $movies[$id];    
-})->middleware(CheckMembership::class);
+    return $movies[$id];
+})->middleware('isMember');
 
 Route::post('/movie', function () use ($movies) {
     $movies[] = [

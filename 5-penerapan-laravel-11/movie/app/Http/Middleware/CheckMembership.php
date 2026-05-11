@@ -22,16 +22,16 @@ class CheckMembership
 
         Log::info('Before Request:', [
             'url' => $request->url(),
-            'params' => $request->url(),
+            'method' => $request->method(),
         ]);
 
-        return $next($request);
-
-        sleep(2);
+        $response = $next($request);
 
         Log::info('After Request:', [
-            'status' => response->getStatusCode(),
-            'content' => response->getContent(),
+            'status' => $response->getStatusCode(),
+            'content' => $response->getContent(),
         ]);
+
+        return $response;
     }
 }
