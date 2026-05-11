@@ -16,7 +16,7 @@ class CheckMembership
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (!$request->membership == true) {
+        if ($request->json('membership') != true) {
             return redirect('/pricing');
         }
 

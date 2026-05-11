@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Middleware\CheckMembership;
+use App\Http\Middleware\IsAuth;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -19,7 +20,7 @@ for ($i = 0; $i < 10; $i++) {
 
 Route::get('/movie/{id}', function ($id) use ($movies) {
     return $movies[$id];
-})->middleware('isMember');
+})->middleware('isAuth', 'isMember');
 
 Route::post('/movie', function () use ($movies) {
     $movies[] = [
@@ -56,3 +57,7 @@ Route::delete('/movie/{id}', function ($id) use ($movies) {
 Route::get('pricing', function () {
     return 'Please, buy a membership';
 });
+
+Route::get('/login', function () {
+    return 'Login Page';
+})->name('login');

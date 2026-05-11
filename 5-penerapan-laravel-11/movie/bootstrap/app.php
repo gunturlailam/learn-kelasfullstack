@@ -13,10 +13,7 @@ return Application::configure(basePath: dirname(__DIR__))
     ->withMiddleware(function (Middleware $middleware) {
         $middleware->alias([
             'isMember' => \App\Http\Middleware\CheckMembership::class,
-        ]);
-
-        $middleware->validateCsrfTokens(except: [
-            'csrf' => \App\Http\Middleware\CheckMembership::class,
+            'isAuth' => \App\Http\Middleware\IsAuth::class,
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
