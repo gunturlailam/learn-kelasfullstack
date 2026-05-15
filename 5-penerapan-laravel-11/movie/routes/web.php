@@ -10,13 +10,6 @@ Route::get('/', function () {
 
 $movies = [];
 
-for ($i = 0; $i < 10; $i++) {
-    $movies[] = [
-        'title' => 'Movie ' . $i,
-        'year' => '2022',
-        'genre' => 'Action',
-    ];
-}
 
 // Public route untuk /movie
 Route::get('/movie', function () use ($movies) {
