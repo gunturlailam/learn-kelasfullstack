@@ -18,4 +18,14 @@ class MovieController extends Controller
             ];
         }
     }
+
+    public function index()
+    {
+        return view('movie.index', ['movies' => $this->movies]);
+    }
+
+    public function show()
+    {
+        return $this->movies;
+    }
 }

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Middleware\CheckMembership;
+use App\Http\Controllers\MovieController;
 use App\Http\Middleware\IsAuth;
 use Illuminate\Support\Facades\Route;
 
@@ -12,12 +13,7 @@ $movies = [];
 
 
 // Public route untuk /movie
-Route::get('/movie', function () use ($movies) {
-    if (request('authenticated') == true) {
-        return $movies;
-    }
-    return 'Login Page';
-});
+Route::get('/movie', [MovieController::class, 'show']);
 
 Route::group(
     [
@@ -26,9 +22,7 @@ Route::group(
         'as' => 'movie.'
     ],
     function () use ($movies) {
-        Route::get('/', function () use ($movies) {
-            return $movies;
-        });
+        Route::get('/', [MovieController::class, 'index'])->name('index');
 
         Route::get('/movie/{id}', function ($id) use ($movies) {
             return $movies[$id];
