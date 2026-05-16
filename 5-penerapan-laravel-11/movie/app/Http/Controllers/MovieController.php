@@ -12,6 +12,7 @@ class MovieController extends Controller
     {
         for ($i = 0; $i < 10; $i++) {
             $this->movies[] = [
+                'id' => $i,
                 'title' => 'Movie ' . $i,
                 'year' => '2022',
                 'genre' => 'Action',
@@ -19,13 +20,15 @@ class MovieController extends Controller
         }
     }
 
+    // GET semua movies
     public function index()
     {
-        return view('movie.index', ['movies' => $this->movies]);
+        return $this->movies;
     }
 
-    public function show()
+    // GET movie berdasarkan ID
+    public function show($id)
     {
-        return $this->movies;
+        return $this->movies[$id] ?? ['error' => 'Movie tidak ditemukan'];
     }
 }
